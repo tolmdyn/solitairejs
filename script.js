@@ -138,7 +138,7 @@ imageObj.onload = function () {
   // cardLayer.batchDraw();
 };
 
-imageObj.src = '/images/Back_1.png';
+imageObj.src = './images/Back_1.png';
 layerBack.add(deckImg);
 
 // CARDS ------------------------
@@ -179,11 +179,7 @@ function renderCardImage(x, y, card) {
     cardLayer.batchDraw();
   };
 
-  if (card.facedown === true) {
-    imageObj.src = '/images/Back_1.png';
-  } else {
-    imageObj.src = card.getImage();
-  }
+  imageObj.src = card.getImage();
 
   cardLayer.add(cardImg);
   return cardImg._id;

@@ -47,7 +47,7 @@ export default class Deck {
     for (let i = 0; i < size; i++) {
       hand.addCard(this.pop())
     }
-    
+
     return hand;
   }
 }
@@ -79,7 +79,11 @@ class Card {
   }
 
   getImage() {
-    return this.image;
+    if (this.facedown === true) {
+      return './images/Back_1.png';
+    } else {
+      return this.image;
+    }
   }
 
   getScore() {
@@ -108,13 +112,13 @@ class Hand {
     return this.cards.length
   }
 
-  addCard(card){
+  addCard(card) {
     this.cards.push(card)
   }
 
-  removeCard(card){
+  removeCard(card) {
     this.cards = this.cards.findIndex(c => c.suit === card.suit && c.rank === card.rank)
-    if ( index !== -1) {
+    if (index !== -1) {
       this.cards.splice(index, 1)
     }
   }
