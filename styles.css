@@ -1,0 +1,14 @@
+
+.board {
+  width: 800px;
+  height: 600px;
+  background-color: green;
+  position: relative;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  cursor: pointer;
+}
