@@ -1,14 +1,14 @@
-
-.board {
-  width: 800px;
-  height: 600px;
+body {
   background-color: green;
-  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
 }
 
-.card {
-  width: 100px;
-  height: 150px;
-  position: absolute;
-  cursor: pointer;
+a {
+  font-family: 'Courier New', Courier, monospace;
+  color: lightgray;
+}
+
+a:visited {
+  color: darkgray;
 }
