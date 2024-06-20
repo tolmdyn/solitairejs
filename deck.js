@@ -58,7 +58,7 @@ class Card {
     this.suit = suit
     this.rank = rank
     this.facedown = facedown
-    this.image = `/images/${suit}_${rank}.png`
+    this.image = `./images/${suit}_${rank}.png`
     this.inPlay = false
   }
 
